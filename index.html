@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    
+    <!-- Google Fonts para letra de boda -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Tangerine:wght@700&family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Reproductor de audio -->
+    <audio id="audio-boda" loop>
+        <source src="audio/cancionboda.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Botón de control de música -->
+    <button id="btn-musica" class="boton-musica">
+        🔊
+    </button>
+
+    <!-- SECCIÓN 1: FOTO DE NOVIOS CON NOMBRES -->
+    <section class="seccion-portada-novios">
+        <div class="overlay-suave"></div>
+        <div class="contenido-portada">
+            <h1 class="nombres-novios-cursiva">Yamileth & Jonathan</h1>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 1.5: FRASE DE LOS NOVIOS -->
+    <section class="seccion-frase-novios">
+        <div class="contenedor-frase">
+            <div class="caja-frase">
+                
+                <p class="texto-frase">" El día más esperado de nuestras vidas finalmente ha llegado. Acompáñenos en nuestra boda y sean parte de nuestra historia de amor "</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: CALENDARIO Y CONTADOR -->
+    <section class="seccion-calendario">
+        <div class="overlay"></div>
+        <div class="contenido-calendario">
+            
+            <h2 class="faltan-texto">FALTAN</h2>
+            
+            <!-- Contador regresivo -->
+            <div class="contador">
+                <div class="tiempo-box">
+                    <span class="numero" id="dias">00</span>
+                    <span class="etiqueta">Días</span>
+                </div>
+                <div class="tiempo-box">
+                    <span class="numero" id="horas">00</span>
+                    <span class="etiqueta">Horas</span>
+                </div>
+                <div class="tiempo-box">
+                    <span class="numero" id="minutos">00</span>
+                    <span class="etiqueta">Minutos</span>
+                </div>
+                <div class="tiempo-box">
+                    <span class="numero" id="segundos">00</span>
+                    <span class="etiqueta">Segundos</span>
+                </div>
+            </div>
+
+            <h3 class="gran-dia">El Gran Día</h3>
+
+            <!-- Calendario -->
+            <div class="calendario-container">
+                <div class="calendario">
+                    <div class="mes-año">FEBRERO 2026</div>
+                    <div class="dias-semana">
+                        <span>L</span>
+                        <span>M</span>
+                        <span>M</span>
+                        <span>J</span>
+                        <span>V</span>
+                        <span>S</span>
+                        <span>D</span>
+                    </div>
+                    <div class="dias-mes">
+                        <span class="vacio"></span>
+                        <span class="vacio"></span>
+                        <span class="vacio"></span>
+                        <span class="vacio"></span>
+                        <span class="vacio"></span>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span class="dia-boda">28</span>
+                        <span>29</span>
+                        <span class="vacio"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: APARTADOS -->
+    <section class="seccion-apartados">
+        
+        <!-- APARTADO 1: Información del lugar -->
+        <div class="apartado" data-apartado="1">
+            <div class="caja-contenido">
+                <h2 class="titulo-apartado">LUGAR</h2>
+                <div class="icono-lugar">📍</div>
+                <h3>Dirección</h3>
+                <p class="direccion">Km 18.5 Carretera Interamericana<br>San Cristóbal</p>
+                <a href="https://waze.com/ul/h9fxe4jj3u" target="_blank" class="btn-mapa">
+                    VER EN WAZE
+                </a>
+            </div>
+        </div>
+
+        <!-- APARTADO 2: Código de vestimenta -->
+        <div class="apartado" data-apartado="2">
+            <div class="caja-contenido">
+                <h2 class="titulo-apartado">Código de vestimenta</h2>
+                
+                <!-- Vestimenta para Ellos -->
+                <div class="vestimenta-fila">
+                    <span class="vestimenta-label">Ellos:</span>
+                    <div class="imagen-vestimenta">
+                        <img src="images/ellos.png" alt="Vestimenta para hombres">
+                    </div>
+                </div>
+
+                <!-- Vestimenta para Ellas -->
+                <div class="vestimenta-fila">
+                    <span class="vestimenta-label">Ellas:</span>
+                    <div class="imagen-vestimenta">
+                        <img src="images/ellas.png" alt="Vestimenta para mujeres">
+                    </div>
+                </div>
+
+                <!-- Paleta de colores -->
+                <div class="colores-fila">
+                    <span class="colores-label">Colores:</span>
+                    <div class="paleta-colores">
+                        <div class="color-circulo" style="background-color: #594A23;"></div>
+                        <div class="color-circulo" style="background-color: #6A6104;"></div>
+                        <div class="color-circulo" style="background-color: #87814F;"></div>
+                        <div class="color-circulo" style="background-color: #A69166;"></div>
+                        <div class="color-circulo" style="background-color: #CBB8A0;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APARTADO 3: HORARIOS -->
+        <div class="apartado" data-apartado="3">
+            <div class="caja-contenido">
+                <h2 class="titulo-apartado">HORARIOS</h2>
+                <div class="icono-horario">🕐</div>
+                <p class="horario-principal">17:00 - 20:00</p>
+                <p class="puntualidad">Puntualidad</p>
+                <p class="puntualidad">Te esperamos!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
