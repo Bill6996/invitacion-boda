@@ -775,3 +775,14 @@ button {
         font-size: 1.2rem;
     }
 }
+
+@supports (-webkit-touch-callout: none) {
+    @media (max-width: 480px) {
+        .seccion-apartados {
+            background-attachment: scroll !important;
+            background-size: 120% auto !important;  /* Imagen más grande */
+            background-repeat: repeat-y !important;
+            background-position: center top !important;
+        }
+    }
+}
